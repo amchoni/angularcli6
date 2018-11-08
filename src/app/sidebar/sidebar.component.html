@@ -1,0 +1,16 @@
+<nav>
+    <ul>
+      <li>
+        <!-- We not use href but we use router link to direct user to diffrent route -->
+        <!-- class.activated - is define in sidebar.component.scss, currentUrl is property in component -->
+        <a routerLink="" [class.activated]="currentUrl == '/'">
+          <i class="material-icons">supervised_user_circle</i>
+        </a>
+      </li>
+      <li>
+          <a routerLink="posts" [class.activated]="currentUrl == '/posts'">
+            <i class="material-icons">message</i>
+          </a>
+        </li>
+    </ul>
+  </nav>
